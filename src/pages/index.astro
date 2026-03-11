@@ -1,11 +1,142 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Trans Ruta Turismo | Conectamos destinos con seguridad">
+  
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <span class="text-4xl">🚍</span>
+        <span class="font-extrabold text-2xl text-blue-950 tracking-tight">TRANS RUTA</span>
+      </div>
+      
+      <nav class="hidden md:flex gap-8 font-semibold text-gray-600">
+        <a href="#servicios" class="hover:text-orange-500 transition-colors">Servicios</a>
+        <a href="#nosotros" class="hover:text-orange-500 transition-colors">Nosotros</a>
+        <a href="#diferenciadores" class="hover:text-orange-500 transition-colors">Diferenciadores</a>
+      </nav>
+
+      
+    </div>
+  </header>
+
+  <main>
+    <section class="relative bg-cover bg-center h-[600px] flex items-center" style="background-image: url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2069&auto=format&fit=crop');">
+      <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
+      
+      <div class="relative max-w-7xl mx-auto px-4 w-full">
+        <div class="max-w-2xl">
+          <h1 class="text-5xl md:text-6xl font-extrabold text-blue-950 mb-4 leading-tight">
+            TRANS RUTA TURISMO
+          </h1>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+            Conectamos destinos con seguridad y confianza.
+          </h2>
+          <p class="text-lg text-gray-700 mb-8 font-medium">
+            Empresa especializada en coordinación de transporte turístico y corporativo en todo Chile. Ofrecemos soluciones seguras, puntuales y organizadas.
+          </p>
+          <a href="#cotizar" class="inline-block bg-orange-500 text-white px-8 py-3.5 rounded-lg text-lg font-bold hover:bg-orange-600 shadow-lg transition transform hover:-translate-y-1">
+            Cotizar servicio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-blue-950 mb-12">Nuestros Servicios</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+            <div class="text-5xl mb-4">🎓</div>
+            <h3 class="text-xl font-bold text-blue-950 mb-3">Transporte para Colegios</h3>
+            <p class="text-gray-600">Giras de estudio, salidas pedagógicas y actividades escolares con planificación y supervisión profesional.</p>
+          </div>
+          
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+            <div class="text-5xl mb-4">🏢</div>
+            <h3 class="text-xl font-bold text-blue-950 mb-3">Eventos Corporativos</h3>
+            <p class="text-gray-600">Traslados para capacitaciones, eventos empresariales y actividades institucionales en todo Chile.</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+            <div class="text-5xl mb-4">🚍</div>
+            <h3 class="text-xl font-bold text-blue-950 mb-3">Viajes Especiales</h3>
+            <p class="text-gray-600">Servicios personalizados para turismo nacional, eventos privados y traslados especiales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-bold text-blue-950 mb-6">Quiénes Somos</h2>
+          <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+            En Trans Ruta Turismo coordinamos soluciones de transporte para colegios, empresas e instituciones en todo Chile. Nos especializamos en planificación logística, supervisión de servicios y atención personalizada, asegurando seguridad, puntualidad y cumplimiento en cada traslado.
+          </p>
+          
+          <div id="diferenciadores" class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+            <h3 class="text-2xl font-bold text-blue-950 mb-4">¿Por qué elegirnos?</h3>
+            <ul class="space-y-3 font-medium text-gray-700">
+              <li class="flex items-center gap-3"><span class="text-orange-500 text-xl">✔</span> Coordinación logística profesional</li>
+              <li class="flex items-center gap-3"><span class="text-orange-500 text-xl">✔</span> Red de buses certificados</li>
+              <li class="flex items-center gap-3"><span class="text-orange-500 text-xl">✔</span> Supervisión previa y durante el servicio</li>
+              <li class="flex items-center gap-3"><span class="text-orange-500 text-xl">✔</span> Atención personalizada</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="relative h-full min-h-[400px]">
+          <img src="https://picsum.photos/seed/buses/1000/800" alt="Coordinador de transporte corporativo" class="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-xl">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="cotizar" class="bg-blue-950 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+      <div class="bg-blue-900/50 p-8 rounded-2xl border border-blue-800">
+        <h3 class="text-2xl font-bold mb-6">Solicitar Cotización</h3>
+        <form action="https://formspree.io/f/xyknkqoj" method="POST" class="space-y-4">
+          <input type="hidden" name="_next" value="http://localhost:4321/gracias">
+          <div class="grid grid-cols-2 gap-4">
+            <input type="text" name="nombre" required placeholder="Nombre completo" class="w-full px-4 py-3 rounded-lg bg-blue-950 border border-blue-800 text-white placeholder-blue-300 focus:outline-none focus:border-orange-500">
+            
+            <input type="text" name="telefono" required placeholder="Teléfono" class="w-full px-4 py-3 rounded-lg bg-blue-950 border border-blue-800 text-white placeholder-blue-300 focus:outline-none focus:border-orange-500">
+          </div>
+          
+          <input type="email" name="email" required placeholder="Correo electrónico" class="w-full px-4 py-3 rounded-lg bg-blue-950 border border-blue-800 text-white placeholder-blue-300 focus:outline-none focus:border-orange-500">
+          
+          <textarea name="mensaje" required placeholder="Detalles de su viaje (Destino, pasajeros, fecha...)" rows="3" class="w-full px-4 py-3 rounded-lg bg-blue-950 border border-blue-800 text-white placeholder-blue-300 focus:outline-none focus:border-orange-500"></textarea>
+          
+          <button type="submit" class="bg-orange-500 px-6 py-3 rounded-lg font-bold hover:bg-orange-600 w-full transition-colors text-lg mt-2">
+            Enviar Solicitud
+          </button>
+        </form>
+      </div>
+      
+      <div class="flex flex-col justify-center px-4">
+        <h3 class="text-3xl font-bold mb-8">Contactanos</h3>
+        <div class="space-y-6 text-xl text-blue-100">
+          <a href="https://wa.me/56982780158" blancclass="flex items-center gap-4 hover:text-white transition group">
+            <span class="bg-green-500 p-3 rounded-full text-white group-hover:scale-110 transition-transform">💬</span>
+            +56 9 8278 0158
+          </a>
+          <a  class="flex items-center gap-4 hover:text-white transition group">
+            <span class="bg-blue-800 p-3 rounded-full text-white group-hover:scale-110 transition-transform">✉️</span>
+            luismartinezr34@gmail.com
+          </a>
+        </div>
+        
+        <div class="mt-16 pt-8 border-t border-blue-800 text-sm text-blue-400 flex justify-between items-center">
+          <p>© 2026 Trans Ruta Turismo. Todos los derechos reservados.</p>
+          <div class="flex gap-2 text-2xl">🚍</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </Layout>
